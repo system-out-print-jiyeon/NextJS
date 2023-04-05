@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {useRouter} from "next/router";
-import styles from "./NavBar.module.css";
 
 export default function NavBar() {
     const router = useRouter();
@@ -16,14 +15,11 @@ export default function NavBar() {
             </Link>
             {/* style jsx의 스타일은 오직 이 컴포넌트 내부로 범위가 한정되어서 다른 컴포넌트에 같은 className을 가지고있어도 적용되지 않는다. */}
             <style jsx>{`
-                nav {
-                    background-color: tomato;
-                }
                 a {
                     text-decoration: none;
                 }
                 .active {
-                    color: yellow;
+                    color: tomato;
                 }
             `}</style>
         </nav>
